@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 40px auto;
+    padding: 40px 35px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search input {
+    flex: 1;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 0 25px;
+    font-size: 18px;
+    color: #555;
+}
+
+.search button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search button img {
+    width: 22px;
+}
+
+.search button:active {
+    transform: scale(0.92);
+}
+
+.weather {
+    display: none;
+}
+
+.weather-icon {
+    width: 150px;
+    margin-top: 30px;
+}
+
+.temp {
+    font-size: 70px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.city {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 25px;
+}
+
+.col p:last-child {
+    font-size: 14px;
+}
+
+.error {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.error p {
+    font-size: 16px;
+}
+
+@media (max-width: 500px) {
+    .card {
+        padding: 30px 20px;
+    }
+
+    .temp {
+        font-size: 60px;
+    }
+
+    .city {
+        font-size: 32px;
+    }
+
+    .details {
+        margin-top: 35px;
+    }
+
+    .humidity,
+    .wind {
+        font-size: 20px;
+    }
+}
